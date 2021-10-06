@@ -1,0 +1,11 @@
+$primary-color: #7c05b5;
+$secondary-color: #e5e5e5;
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}

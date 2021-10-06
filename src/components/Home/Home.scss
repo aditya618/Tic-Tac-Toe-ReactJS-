@@ -1,0 +1,219 @@
+@import "../../common/common.scss";
+
+.home {
+  .row {
+    height: 100vh;
+    position: relative;
+  }
+  .left-half {
+    background-color: $primary-color;
+    position: relative;
+    overflow: hidden;
+
+    .circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 10px solid white;
+    }
+
+    .circle1 {
+      width: 285px;
+      height: 285px;
+      left: 314px;
+      top: 331px;
+      animation: cir1-anime 40s linear infinite;
+    }
+
+    @keyframes cir1-anime {
+      0% {
+        left: 314px;
+      }
+      20% {
+        left: 700px;
+        visibility: hidden;
+      }
+      40% {
+        left: -300px;
+        visibility: hidden;
+      }
+      60% {
+        left: -300px;
+        visibility: hidden;
+      }
+      80% {
+        left: 0px;
+      }
+      100% {
+        left: 314px;
+      }
+    }
+    .circle2 {
+      width: 170px;
+      height: 170px;
+      left: 91px;
+      top: 221px;
+      animation: cir2-anime 20s linear infinite;
+    }
+    @keyframes cir2-anime {
+      0% {
+        left: 91px;
+      }
+      25% {
+        left: 300px;
+      }
+      50% {
+        left: 700px;
+        visibility: hidden;
+      }
+      75% {
+        left: -200px;
+        visibility: hidden;
+      }
+      100% {
+        left: 91px;
+      }
+    }
+    .circle3 {
+      width: 238px;
+      height: 238px;
+      left: 350px;
+      top: -116px;
+      animation: cir3-anime 10s linear infinite;
+    }
+    @keyframes cir3-anime {
+      0% {
+        left: 350px;
+      }
+      25% {
+        left: 500px;
+      }
+      50% {
+        left: 700px;
+        visibility: hidden;
+      }
+      75% {
+        left: -200px;
+        visibility: hidden;
+      }
+      100% {
+        left: 350px;
+      }
+    }
+    .circle4 {
+      width: 62px;
+      height: 62px;
+      left: 66px;
+      top: 60px;
+      animation: cir4-anime 5s linear infinite;
+    }
+    @keyframes cir4-anime {
+      0% {
+        left: 66px;
+      }
+      25% {
+        left: 333px;
+      }
+      50% {
+        left: 700px;
+        visibility: hidden;
+      }
+      75% {
+        left: -200px;
+        visibility: hidden;
+      }
+      100% {
+        left: 66px;
+      }
+    }
+    .circle5 {
+      width: 210px;
+      height: 210px;
+      left: -64px;
+      top: 528px;
+      animation: cir5-anime 30s linear infinite;
+    }
+    @keyframes cir5-anime {
+      0% {
+        left: -64px;
+      }
+      25% {
+        left: 382px;
+      }
+      50% {
+        left: 700px;
+        visibility: hidden;
+      }
+      75% {
+        left: -200px;
+        visibility: hidden;
+      }
+      100% {
+        left: -64px;
+      }
+    }
+  }
+  .right-half {
+    background-color: $secondary-color;
+    position: relative;
+    overflow: hidden;
+
+    .cross {
+      color: $primary-color;
+      font-size: 200px;
+      font-family: cursive;
+      position: absolute;
+    }
+
+    .cross1 {
+      left: 67px;
+      top: -300px;
+    }
+    .cross2 {
+      font-size: 300px;
+      left: 400px;
+      top: -200px;
+    }
+    .cross3 {
+      left: 302px;
+      top: -400px;
+      font-size: 250px;
+    }
+    .cross4 {
+      top: -600px;
+      left: 530px;
+      font-size: 500px;
+    }
+    .cross5 {
+      top: -100px;
+      left: 117px;
+      font-size: 100px;
+    }
+  }
+  .brand {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      -webkit-text-stroke: 2.5px $primary-color;
+      text-shadow: 0px 0px 3px #ffffff;
+      font-size: 64px;
+    }
+
+    button {
+      box-shadow: 0px 0px 8px 0px #000000;
+      border-radius: 69px;
+      width: 15.75rem;
+      font-size: 1.4rem;
+    }
+    button:hover {
+      box-shadow: 0px 0px 12px 2px #000000;
+    }
+  }
+}

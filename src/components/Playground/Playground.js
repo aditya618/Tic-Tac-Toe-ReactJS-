@@ -31,9 +31,12 @@ const Playground = () => {
   const [isDraw, setIsDraw] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    onGameOver();
-  }, [usedPositions]);
+  useEffect(
+    () => {
+      onGameOver();
+    }, // eslint-disable-next-line
+    [usedPositions]
+  );
 
   function openModal() {
     setIsModalOpen(true);
